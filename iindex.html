@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hisam - Web Developer Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Header / Profile Section */
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #38bdf8;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+            background: #94a3b8;
+        }
+
+        h1 { font-size: 1.5rem; color: #38bdf8; }
+        p.subtitle { font-size: 0.9rem; color: #94a3b8; }
+
+        /* Card Container */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:active {
+            transform: scale(0.98);
+        }
+
+        .card h2 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fbbf24;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            list-style: none;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+        }
+
+        .card ul li::before {
+            content: "✓ ";
+            color: #38bdf8;
+        }
+
+        /* Button */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.7rem;
+            color: #64748b;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="pick1.png" alt="Hisam Profile" class="profile-img">
+            <h1>Halo, Saya Hisam</h1>
+            <p class="subtitle">Jasa Pembuatan Website Modern di HP</p>
+        </header>
+
+        <div class="card">
+            <h2>📦 Paket Hemat</h2>
+            <span class="price">Rp 50.000</span>
+            <ul>
+                <li>Kartu Nama Digital / Link Bio</li>
+                <li>Custom Warna & Link Sosmed</li>
+                <li>Pengerjaan Cepat</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Paket UMKM</h2>
+            <span class="price">Rp 150.000</span>
+            <ul>
+                <li>Landing Page Jualan</li>
+                <li>Galeri Foto Produk</li>
+                <li>Tombol Langsung ke WhatsApp</li>
+            </ul>
+        </div>
+
+        <a href="https://wa.me/message/ZXPOKE7IK2CHF1" class="btn">Konsultasi Gratis via WhatsApp</a>
+
+        <footer>
+            &copy; 2026 Hisam Dev. Dibuat sepenuhnya di Smartphone.
+        </footer>
+    </div>
+
+</body>
+</html>
